@@ -57,3 +57,13 @@ Keep `trip.html` out of git; the tracked files are `index.html`, `payload-*.txt`
 ## Images
 
 Location photos live in `img/` and are referenced from the decoded page by relative path (`img/<place>.jpg`), which works because the loader writes the page into the same document at the site root. They are creator photos pulled from review posts (Lemon8, Trip.com moments, Pantip, TikTok, YouTube) and self-hosted because the social CDN URLs are signed and expire. Every image carries a `.credit` badge that links to the source post; keep that badge when swapping an image, and resize new images to about 1400px on the long edge before adding them.
+
+
+## Itinerary data refresh (2026-10)
+
+`itinerary-update.js` is loaded by the bootstrap after the compressed HTML has been decoded. It renders the current itinerary from the supplied spreadsheet into the page and adds date filters and map/reference links. Keep the itinerary data in that script when refreshing this sheet-driven schedule.
+
+- Do not edit `payload-*.txt` by hand; the original design remains in the encoded payload.
+- Keep the script URL cache-busted in `index.html` when updating the itinerary script.
+- The spreadsheet lists the return train with the same direction text as the outbound row, but its ticket link is labeled return. The rendered itinerary therefore shows Chiang Mai → Krung Thep Aphiwat and notes the correction.
+- Booking-status cells were blank in the spreadsheet; the page does not mark any reservations as confirmed.
