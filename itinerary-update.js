@@ -61,11 +61,14 @@
         <div class="budget-heading"><div><span class="section-eyebrow">GROUP BUDGET · 9 PEOPLE</span><h2>สรุปค่าใช้จ่ายเบื้องต้น</h2><p>ยอดที่มีข้อมูลแล้ว สำหรับ 9 คน · 22–25 ต.ค. 2026</p></div><span class="budget-people">👥 9 คน</span></div>
         <div class="budget-cards">
           <article class="budget-card"><span>ค่าที่พักบ้านสายหมอก</span><strong>฿10,800</strong><small>1,200 บาท/คน × 9 คน · รวมอาหารเช้าและหมูกระทะ 2 ชุด</small></article>
-          <article class="budget-card optional"><span>ATV แม่ปั๋ง · ถ้าเล่น 1 ชั่วโมง</span><strong>฿3,000</strong><small>ประมาณ 5 คัน × 600 บาท/คัน/ชั่วโมง · 2 คน/คัน</small></article>
-          <article class="budget-card total"><span>ยอดที่ทราบแล้ว</span><strong>฿10,800</strong><small>เฉลี่ย 1,200 บาท/คน · ยังไม่รวมรายการที่รอยืนยัน</small></article>
+          <article class="budget-card"><span>ค่าเช่ารถ 2 คัน · 3 วัน</span><strong>฿10,800</strong><small>HR-V e:HEV RS + Civic e:HEV RS · 1,800 บาท/คัน/วัน × 3 วัน · รวมเงินมัดจำที่จ่ายไปแล้วคันละ 500 บาท</small></article>
+          <article class="budget-card total"><span>ค่าใช้จ่ายที่ทราบแล้ว</span><strong>฿21,600</strong><small>เฉลี่ย ฿2,400/คน · รวมที่พักบ้านสายหมอกและค่าเช่ารถ ยังไม่รวมรายการอื่น</small></article>
+          <article class="budget-card optional"><span>เงินประกันรถที่ต้องสำรอง</span><strong>฿8,000</strong><small>4,000 บาท/คัน × 2 คัน · ชำระวันรับรถและได้รับคืนวันคืนรถตามเงื่อนไข</small></article>
+          <article class="budget-card optional"><span>เงินที่ต้องจ่ายวันรับรถ</span><strong>฿17,800</strong><small>4,900 บาท/คัน + เงินประกัน 4,000 บาท/คัน × 2 คัน · ไม่รวมมัดจำ 500 บาท/คันที่จ่ายแล้ว</small></article>
+          <article class="budget-card optional"><span>ATV แม่ปั๋ง · ถ้าเล่น 1 ชั่วโมง</span><strong>฿3,000</strong><small>ประมาณ 5 คัน × 600 บาท/คัน/ชั่วโมง · 2 คน/คัน · เป็นค่าใช้จ่ายเสริม</small></article>
         </div>
-        <div class="budget-pending"><b>รายการที่ยังไม่รวมในยอด</b><span>ตั๋วรถไฟไป–กลับ · ค่าเช่ารถและน้ำมัน · เครื่องเล่น Pong Yang · ที่พักแม่ปั๋ง · อาหารและเครื่องดื่มอื่น ๆ</span></div>
-        <p class="budget-footnote">หมายเหตุ: ค่า ATV เป็นกิจกรรมเสริมและคำนวณกรณีทุกคนเล่น 1 ชั่วโมงเท่านั้น ส่วนยอดรวมทั้งทริปจะยังไม่ครบจนกว่าจะทราบค่าใช้จ่ายรายการที่เหลือ</p>
+        <div class="budget-pending"><b>รายการที่ยังไม่รวมในยอด</b><span>ตั๋วรถไฟไป–กลับ · ค่าน้ำมันและค่าใช้จ่ายรถอื่น ๆ · เครื่องเล่น Pong Yang · ที่พักแม่ปั๋ง · อาหารและเครื่องดื่มอื่น ๆ</span></div>
+        <p class="budget-footnote">ค่าเช่ารถรวมตามอัตรา 1,800 บาท/วัน × 3 วัน × 2 คัน = 10,800 บาท (รวมเงินมัดจำ 500 บาท/คันที่ชำระไว้แล้ว) · เงินประกันรถ 8,000 บาทเป็นเงินสำรองที่คาดว่าจะได้รับคืน ไม่ใช่ค่าใช้จ่ายสุทธิ · ยอดรวมทั้งทริปยังไม่ครบจนกว่าจะเพิ่มรายการที่เหลือ</p>
       </section>
       <div class="day-filter" role="tablist" aria-label="เลือกวัน"><button class="day-filter-btn" data-day="all" role="tab" aria-selected="false">ทุกวัน</button>${keys.map((k,i)=>'<button class="day-filter-btn '+(k===defaultDay?'active':'')+'" data-day="'+k+'" role="tab" aria-selected="'+(k===defaultDay?'true':'false')+'"><span>DAY 0'+(i+1)+'</span><b>'+k+' ต.ค.</b></button>').join("")}</div>
       <section class="map-workspace" aria-label="แผนที่และกำหนดการ">
